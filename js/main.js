@@ -296,7 +296,7 @@ class TheSpace {
     const gltfLoader = new GLTFLoader();
 
     // Monkey
-    const monkey = (await gltfLoader.loadAsync('../models/monkey.glb')).scene.children[0];
+    const monkey = (await gltfLoader.loadAsync('models/monkey.glb')).scene.children[0];
     monkey.position.y = 1;
     monkey.position.z = -3;
     monkey.material.opacity = 0.8;
@@ -305,7 +305,7 @@ class TheSpace {
     this.objects["Monkey"] = monkey;
 
     // Monkey
-    const icoSphere = (await gltfLoader.loadAsync('../models/icoSphere.glb')).scene.children[0];
+    const icoSphere = (await gltfLoader.loadAsync('models/icoSphere.glb')).scene.children[0];
     icoSphere.position.x = 3;
     icoSphere.position.y = 1;
     icoSphere.position.z = -3;
@@ -315,7 +315,7 @@ class TheSpace {
     this.objects["IcoSphere"] = icoSphere;
 
     // Torus
-    const torus = (await gltfLoader.loadAsync('../models/torus.glb')).scene.children[0];
+    const torus = (await gltfLoader.loadAsync('models/torus.glb')).scene.children[0];
     torus.position.x = -3;
     torus.position.y = 1;
     torus.position.z = -3;
@@ -325,7 +325,7 @@ class TheSpace {
     this.objects["Torus"] = torus;
 
     // Gun
-    const gun = (await gltfLoader.loadAsync('../models/gun.glb')).scene.children[0];
+    const gun = (await gltfLoader.loadAsync('models/gun.glb')).scene.children[0];
     gun.position.y = 1.1;
     gun.position.z = 3;
     this.scene.add(gun);
