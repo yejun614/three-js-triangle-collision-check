@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+a {
+  color: skyblue;
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 5px 20px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -11,4 +22,49 @@ body {
 
 canvas:focus {
   outline: none;
+}
+
+#help {
+  width: fit-content;
+  height: fit-content;
+  margin: 10px;
+  background-color: rgba(100, 100, 100, .5);
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+#help.active {
+  display: block;
+}
+
+#help h2 {
+  margin-bottom: 5px;
+}
+
+#help .swap {
+  display: none;
+  padding: 5px 0;
+}
+
+#help .swap.active {
+  display: block;
+}
+
+#help .swap ul {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#copyright {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: gray;
+  padding-bottom: 10px;
+  font-style: italic;
+  font-size: small;
 }
