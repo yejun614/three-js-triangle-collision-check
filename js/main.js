@@ -305,7 +305,7 @@ class TheSpace {
     this.objects["Monkey"] = monkey;
 
     // Monkey
-    const icoSphere = (await gltfLoader.loadAsync('models/icoSphere.glb')).scene.children[0];
+    const icoSphere = (await gltfLoader.loadAsync('models/IcoSphere.glb')).scene.children[0];
     icoSphere.position.x = 3;
     icoSphere.position.y = 1;
     icoSphere.position.z = -3;
