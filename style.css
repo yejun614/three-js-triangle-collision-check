@@ -33,6 +33,7 @@ canvas:focus {
   position: fixed;
   top: 0px;
   left: 0px;
+  color: white;
   display: none;
 }
 
@@ -67,4 +68,5 @@ canvas:focus {
   padding-bottom: 10px;
   font-style: italic;
   font-size: small;
+  color: white;
 }
